@@ -1,2 +1,2 @@
-# Koji
-Best programming project dedicated to a wise brilliant genius ;-)
+# ProjectWithFriends
+Developing an iOS app with friends
