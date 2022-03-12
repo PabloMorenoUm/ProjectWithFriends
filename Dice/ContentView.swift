@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20.0) {
             Image("dice-\(diceNumber)")
-            Text("You rolled a \(diceNumber)")
+            Text("YOU ROLLED A \(diceNumber)")
                 .padding()
         }
     }
