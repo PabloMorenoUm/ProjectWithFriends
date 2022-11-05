@@ -15,17 +15,22 @@ struct ContentView: View {
     func playSound(number: Int32) {
         let numberString = String(number)
         let filename = numberString + ".mp3"
-        let path = Bundle.main.path(forResource: filename, ofType: nil)!
-        let url = URL(fileURLWithPath: path)
+        let path = Bundle.main.path(forResource: filename, ofType: nil)
+        if (path != nil) {
+            let url = URL(fileURLWithPath: path!)
 
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: url)
-            guard let player = audioPlayer else { return }
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                guard let player = audioPlayer else { return }
 
-            player.prepareToPlay()
-            player.play()
-        } catch let error {
-            print(error.localizedDescription)
+                player.prepareToPlay()
+                player.play()
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        else {
+            print("File '" + filename + "' not found")
         }
     }
     
