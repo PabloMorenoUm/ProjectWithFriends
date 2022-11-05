@@ -14,7 +14,7 @@ struct ContentView: View {
     
     func playSound() {
         print("playSound")
-        let path = Bundle.main.path(forResource: "one.wav", ofType: nil)!
+        let path = Bundle.main.path(forResource: "1.mp3", ofType: nil)!
         let url = URL(fileURLWithPath: path)
 
         do {
