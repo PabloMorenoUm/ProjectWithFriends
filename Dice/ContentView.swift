@@ -6,9 +6,27 @@
 //
 
 import SwiftUI
+import AVFoundation
+var audioPlayer: AVAudioPlayer?
 
 struct ContentView: View {
     @State var diceNumber = Int.random(in: 1...6)
+    
+    func playSound() {
+        print("playSound")
+        let path = Bundle.main.path(forResource: "one.wav", ofType: nil)!
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            guard let player = audioPlayer else { return }
+
+            player.prepareToPlay()
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
     
     var body: some View {
         VStack(alignment: .center, spacing: 20.0) {
@@ -17,6 +35,8 @@ struct ContentView: View {
                 .padding()
         }.onTapGesture {
             diceNumber = Int.random(in: 1...6)
+
+            playSound()
         }
     }
 }

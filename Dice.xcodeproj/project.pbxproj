@@ -14,6 +14,7 @@
 		2A7B5A1527CA88E50023DD36 /* DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7B5A1427CA88E50023DD36 /* DiceTests.swift */; };
 		2A7B5A1F27CA88E50023DD36 /* DiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7B5A1E27CA88E50023DD36 /* DiceUITests.swift */; };
 		2A7B5A2127CA88E50023DD36 /* DiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7B5A2027CA88E50023DD36 /* DiceUITestsLaunchTests.swift */; };
+		E15F2BF82916F15300B29C63 /* one.wav in Resources */ = {isa = PBXBuildFile; fileRef = E15F2BF72916F15300B29C63 /* one.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2A7B5A1A27CA88E50023DD36 /* DiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7B5A1E27CA88E50023DD36 /* DiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceUITests.swift; sourceTree = "<group>"; };
 		2A7B5A2027CA88E50023DD36 /* DiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E15F2BF72916F15300B29C63 /* one.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = one.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				2A7B5A0327CA88D80023DD36 /* DiceApp.swift */,
 				2A7B5A0527CA88D80023DD36 /* ContentView.swift */,
 				2A7B5A0727CA88E30023DD36 /* Assets.xcassets */,
+				E15F2BF62916F15300B29C63 /* Music */,
 				2A7B5A0927CA88E30023DD36 /* Preview Content */,
 			);
 			path = Dice;
@@ -125,6 +128,14 @@
 				2A7B5A2027CA88E50023DD36 /* DiceUITestsLaunchTests.swift */,
 			);
 			path = DiceUITests;
+			sourceTree = "<group>";
+		};
+		E15F2BF62916F15300B29C63 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				E15F2BF72916F15300B29C63 /* one.wav */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15F2BF82916F15300B29C63 /* one.wav in Resources */,
 				2A7B5A0B27CA88E30023DD36 /* Preview Assets.xcassets in Resources */,
 				2A7B5A0827CA88E30023DD36 /* Assets.xcassets in Resources */,
 			);
