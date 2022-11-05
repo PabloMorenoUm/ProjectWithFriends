@@ -12,9 +12,10 @@ var audioPlayer: AVAudioPlayer?
 struct ContentView: View {
     @State var diceNumber = Int.random(in: 1...6)
     
-    func playSound() {
-        print("playSound")
-        let path = Bundle.main.path(forResource: "1.mp3", ofType: nil)!
+    func playSound(number: Int32) {
+        let numberString = String(number)
+        let filename = numberString + ".mp3"
+        let path = Bundle.main.path(forResource: filename, ofType: nil)!
         let url = URL(fileURLWithPath: path)
 
         do {
@@ -36,7 +37,7 @@ struct ContentView: View {
         }.onTapGesture {
             diceNumber = Int.random(in: 1...6)
 
-            playSound()
+            playSound(number: Int32(diceNumber))
         }
     }
 }
