@@ -21,6 +21,8 @@ struct ContentView: View {
             diceNumber = Int.random(in: 1...6)
 
             playSound(number: Int32(diceNumber))
+        }.onAppear {
+            playSound(number: Int32(diceNumber))
         }
     }
 }
