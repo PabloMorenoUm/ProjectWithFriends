@@ -14,6 +14,12 @@
 		2A7B5A1527CA88E50023DD36 /* DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7B5A1427CA88E50023DD36 /* DiceTests.swift */; };
 		2A7B5A1F27CA88E50023DD36 /* DiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7B5A1E27CA88E50023DD36 /* DiceUITests.swift */; };
 		2A7B5A2127CA88E50023DD36 /* DiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7B5A2027CA88E50023DD36 /* DiceUITestsLaunchTests.swift */; };
+		E15F2C032916FC9200B29C63 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E15F2BFD2916FC9200B29C63 /* 6.mp3 */; };
+		E15F2C042916FC9200B29C63 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E15F2BFE2916FC9200B29C63 /* 4.mp3 */; };
+		E15F2C052916FC9200B29C63 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E15F2BFF2916FC9200B29C63 /* 5.mp3 */; };
+		E15F2C062916FC9200B29C63 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E15F2C002916FC9200B29C63 /* 1.mp3 */; };
+		E15F2C072916FC9200B29C63 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E15F2C012916FC9200B29C63 /* 2.mp3 */; };
+		E15F2C082916FC9200B29C63 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E15F2C022916FC9200B29C63 /* 3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		2A7B5A1A27CA88E50023DD36 /* DiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7B5A1E27CA88E50023DD36 /* DiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceUITests.swift; sourceTree = "<group>"; };
 		2A7B5A2027CA88E50023DD36 /* DiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E15F2BFD2916FC9200B29C63 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
+		E15F2BFE2916FC9200B29C63 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
+		E15F2BFF2916FC9200B29C63 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
+		E15F2C002916FC9200B29C63 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		E15F2C012916FC9200B29C63 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		E15F2C022916FC9200B29C63 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 				2A7B5A0327CA88D80023DD36 /* DiceApp.swift */,
 				2A7B5A0527CA88D80023DD36 /* ContentView.swift */,
 				2A7B5A0727CA88E30023DD36 /* Assets.xcassets */,
+				E15F2BFC2916FC9200B29C63 /* Music */,
 				2A7B5A0927CA88E30023DD36 /* Preview Content */,
 			);
 			path = Dice;
@@ -125,6 +138,19 @@
 				2A7B5A2027CA88E50023DD36 /* DiceUITestsLaunchTests.swift */,
 			);
 			path = DiceUITests;
+			sourceTree = "<group>";
+		};
+		E15F2BFC2916FC9200B29C63 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				E15F2BFD2916FC9200B29C63 /* 6.mp3 */,
+				E15F2BFE2916FC9200B29C63 /* 4.mp3 */,
+				E15F2BFF2916FC9200B29C63 /* 5.mp3 */,
+				E15F2C002916FC9200B29C63 /* 1.mp3 */,
+				E15F2C012916FC9200B29C63 /* 2.mp3 */,
+				E15F2C022916FC9200B29C63 /* 3.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +257,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15F2C062916FC9200B29C63 /* 1.mp3 in Resources */,
+				E15F2C032916FC9200B29C63 /* 6.mp3 in Resources */,
+				E15F2C052916FC9200B29C63 /* 5.mp3 in Resources */,
 				2A7B5A0B27CA88E30023DD36 /* Preview Assets.xcassets in Resources */,
 				2A7B5A0827CA88E30023DD36 /* Assets.xcassets in Resources */,
+				E15F2C072916FC9200B29C63 /* 2.mp3 in Resources */,
+				E15F2C082916FC9200B29C63 /* 3.mp3 in Resources */,
+				E15F2C042916FC9200B29C63 /* 4.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
